@@ -1,0 +1,94 @@
+.foto-modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 50px;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.foto-modal-content {
+  position: relative;
+}
+
+.foto-close {
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 40px;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: $color_accent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.foto-slide {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  @media screen and (min-width: 180px) and (max-width: 374px) {
+    width: 310px;
+  }
+
+  @media screen and (min-width: 375px) and (max-width: $iPadmini - 1px) {
+    width: 360px;
+  }
+}
+
+.foto-prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  margin-left: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  &:hover {
+    background-color: $color_accent;
+  }
+}
+
+.foto-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+  @media screen and (min-width: $iPhone11ProX) {
+    right: 28px;
+  }
+  @media screen and (min-width: $iPadmini) {
+    right: 35px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 115px;
+  }
+  &:hover {
+    background-color: $color_accent;
+  }
+}

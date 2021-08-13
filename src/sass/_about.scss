@@ -1,0 +1,306 @@
+.about-section {
+  position: relative;
+}
+
+.about-background-grey {
+  background-image: url(../images/about/overlaygrey2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    height: 390px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    height: 500px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    height: 530px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 760px;
+  }
+}
+
+.about-background-raccoon {
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $mobile) {
+    width: 303px;
+    height: 275px;
+    top: 9px;
+    right: 0px;
+    background-image: url(../images/about/header5.jpg);
+  }
+
+  @media screen and (min-width: $iPhone11ProX) {
+    width: 359px;
+    height: 295px;
+    top: 9px;
+    right: 0px;
+    background-image: url(../images/about/header4.jpg);
+  }
+
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 632px;
+    height: 399px;
+    top: 16px;
+    right: 0px;
+    background-image: url(../images/about/header3.jpg);
+  }
+
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 698px;
+    height: 399px;
+    top: 20px;
+    right: 0px;
+    background-image: url(../images/about/header2.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 943px;
+    height: 539px;
+    top: 46px;
+    right: 92px;
+    background-image: url(../images/about/header1.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .about-background-raccoon {
+    @media screen and (min-width: $mobile) {
+      background-image: url(../images/about/header5@2x.jpg);
+    }
+
+    @media screen and (min-width: $iPhone11ProX) {
+      background-image: url(../images/about/header4@2x.jpg);
+    }
+
+    @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+      background-image: url(../images/about/header3@2x.jpg);
+    }
+
+    @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+      background-image: url(../images/about/header2@2x.jpg);
+    }
+
+    @media screen and (min-width: $desktop2) {
+      background-image: url(../images/about/header1@2x.jpg);
+    }
+  }
+}
+
+.about-background-yellow {
+  position: absolute;
+  z-index: 3;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 245px;
+    height: 335px;
+    top: 160px;
+    left: 450px;
+    background-image: url(../images/about/about-overlayyellow1440.svg);
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 245px;
+    height: 335px;
+    top: 210px;
+    left: 663px;
+    background-image: url(../images/about/about-overlayyellow1440.svg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 331px;
+    height: 335px;
+    top: 358px;
+    left: 950px;
+    background-image: url(../images/about/about-overlayyellow1440.svg);
+  }
+}
+
+.about-background-white {
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    width: 197px;
+    height: 210px;
+    top: 200px;
+    left: 0px;
+    background-image: url(../images/about/about-overlaywhite375.svg);
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 316px;
+    height: 325px;
+    top: 40px;
+    left: 110px;
+    background-image: url(../images/about/about-overlaywhite768.svg);
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 450px;
+    height: 450px;
+    top: 0px;
+    left: 245px;
+    background-image: url(../images/about/about-overlaywhite1440.svg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 470px;
+    height: 450px;
+    top: 153px;
+    left: 246px;
+    background-image: url(../images/about/about-overlaywhite1440.svg);
+  }
+}
+.about-block-text {
+  position: absolute;
+  z-index: 4;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    top: 280px;
+    left: 10px;
+  }
+
+  @media screen and (min-width: $iPhone11ProX) and (max-width: $iPadmini - 1px) {
+    top: 281px;
+    left: 21px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    top: 123px;
+    left: 63px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    top: 81px;
+    left: 77px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 246px;
+    left: 149px;
+  }
+}
+.about-title {
+  font-family: $font_accent;
+  font-weight: bold;
+  line-height: 1.2;
+  color: $color-secondary;
+  margin: 0;
+  text-align: left;
+  @media screen and (max-width: $iPadmini - 1px) {
+    font-size: 32px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.about-paragraf {
+  font-family: $font_details;
+  line-height: 1.5;
+  color: $color-secondary;
+  text-align: left;
+  margin: 32px 0px 0px 0px;
+
+  @media screen and (min-width: $mobile) and (max-width: $iPhone11ProX -1px) {
+    font-size: 15px;
+    width: 250px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  @media screen and (min-width: $iPhone11ProX) and (max-width: $iPadmini - 1px) {
+    font-size: 16px;
+    width: 338px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    font-size: 16px;
+    width: 311px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    font-size: 18px;
+    width: 437px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    width: 590px;
+  }
+}
+
+.about-arrow-left {
+  position: absolute;
+  z-index: 5;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    top: 120px;
+    left: 15px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    top: 210px;
+    left: 30px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    top: 202px;
+    left: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 298px;
+    left: 100px;
+  }
+}
+
+.about-arrow-right {
+  position: absolute;
+  z-index: 5;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    top: 120px;
+    right: 15px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    top: 210px;
+    right: 30px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    top: 202px;
+    right: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 298px;
+    right: 106px;
+  }
+}
+
+.about-scroll {
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 682px;
+    left: 709px;
+  }
+}

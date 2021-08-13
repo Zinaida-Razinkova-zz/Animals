@@ -1,0 +1,632 @@
+.history-block-text {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+
+  @media screen and (min-width: 180px) and (max-width: 374px) {
+    top: 180px;
+    left: 10px;
+  }
+  @media screen and (min-width: 375px) and (max-width: $iPadmini - 1px) {
+    top: 150px;
+    left: 17px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    top: -20px;
+    left: 22px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    top: 30px;
+    left: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -40px;
+    left: 93px;
+  }
+}
+
+.history-title {
+  font-family: $font_accent;
+  font-weight: bold;
+  line-height: 1.2px;
+  color: $color-secondary;
+  margin: 0;
+  @media screen and (max-width: $iPadmini - 1px) {
+    font-size: 32px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 50px;
+  }
+}
+
+.history-paragraf {
+  font-family: $font_details;
+  color: $color-secondary;
+  line-height: 1.5;
+
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+    width: 280px;
+    font-size: 16px;
+    margin: 32px 0px 0px 0px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 375px) and (max-width: $iPadmini - 1px) {
+    width: 337px;
+    font-size: 16px;
+    margin: 32px 0px 0px 0px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 720px;
+    font-size: 16px;
+    margin: 32px 0px 0px 0px;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 812px;
+    font-size: 18px;
+    margin: 50px 0px 0px 0px;
+    padding-bottom: 35px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 869px;
+    font-size: 18px;
+    margin: 50px 0px 0px 0px;
+    padding-bottom: 55px;
+  }
+}
+/* Секция визуализация истории  */
+.history-visualization {
+  position: relative;
+  margin: 0px;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    top: 170px;
+    left: 13px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    top: -10px;
+    overflow: hidden;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    top: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -50px;
+  }
+}
+
+.history-gray-arrows {
+  background-repeat: no-repeat;
+
+  // до 374
+  @media screen and (min-width: 320px) and (max-width: 374px) {
+    height: 947px;
+    background-image: url(../images/history/history2-gray-arrows320.png);
+  }
+
+  // до 767
+  @media screen and (min-width: 375px) and (max-width: $iPadmini - 1px) {
+    height: 1239px;
+    background-image: url(../images/history/history-gray-arrows375.svg);
+  }
+  // c 769 до 1024
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2) {
+    height: 60px;
+    background-image: url(../images/history/history-gray-arrows1024.svg);
+  }
+  // c 1025 до 1439
+  @media screen and (min-width: $desktop2 +1px) and (max-width: $desktop - 1px) {
+    margin-left: 23px;
+
+    height: 62px;
+    background-image: url(../images/history/history-gray-arrows1440.svg);
+  }
+  //c 1440
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+    height: 62px;
+    background-image: url(../images/history/history-gray-arrows1440.svg);
+  }
+}
+
+.history-date-1,
+.history-date-2,
+.history-date-3,
+.history-date-4,
+.history-date-5 {
+  font-family: $font_accent;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2px;
+  color: $color-primary;
+  margin: 0px;
+  position: absolute;
+  top: 15px;
+}
+
+.history-date-1 {
+  @media screen and (max-width: $iPadmini - 1px) {
+    padding-left: 140px;
+    padding-top: 15px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2) {
+    left: 108px;
+    top: 30px;
+  }
+  @media screen and (min-width: $desktop2 +1px) and (max-width: $desktop - 1px) {
+    left: 108px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 181px;
+    top: 30px;
+  }
+}
+
+.history-date-2 {
+  @media screen and (max-width: $iPadmini - 1px) {
+    padding-left: 140px;
+    padding-top: 265px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    left: 351px;
+    top: 30px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    left: 351px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 432px;
+    top: 30px;
+  }
+}
+
+.history-date-3 {
+  @media screen and (max-width: $iPadmini - 1px) {
+    padding-left: 140px;
+    padding-top: 475px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    left: 594px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    left: 610px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 683px;
+    top: 30px;
+  }
+}
+
+.history-date-4 {
+  @media screen and (max-width: $iPadmini - 1px) {
+    padding-left: 140px;
+    padding-top: 740px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    left: 838px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    left: 870px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 935px;
+    top: 30px;
+  }
+}
+
+.history-date-5 {
+  @media screen and (max-width: $iPadmini - 1px) {
+    padding-left: 140px;
+    padding-top: 995px;
+  }
+
+  @media screen and (min-width: $iPadmini) and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) and (max-width: 1366px) {
+    left: 1128px;
+    top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 1188px;
+    top: 30px;
+  }
+}
+
+.history-timeline {
+  @media screen and (max-width: $iPadmini - 1px) {
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+.history-line-iPhone {
+  @media screen and (max-width: $iPadmini - 1px) {
+    background-repeat: no-repeat;
+    background-image: url(../images/history/history-line375.svg);
+    width: 10px;
+    height: 1188px;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+  }
+}
+
+.history-line-1 {
+  width: 1px;
+  height: 362px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 29px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 28px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 99px;
+  }
+}
+
+.history-yellowcircle-1 {
+  height: 14px;
+  width: 14px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    position: absolute;
+    top: 202px;
+    left: -5px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 21px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 21px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 93px;
+  }
+}
+
+.history-line-2 {
+  width: 1px;
+  height: 194px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 18px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 15px;
+  }
+}
+
+.history-yellowcircle-2 {
+  height: 14px;
+  width: 14px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    position: absolute;
+    top: 412px;
+    left: -5px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 10px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 10px;
+  }
+}
+
+.history-line-3 {
+  width: 1px;
+  height: 337px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 30px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 20px;
+  }
+}
+
+.history-yellowcircle-3 {
+  height: 14px;
+  width: 14px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    position: absolute;
+    top: 680px;
+    left: -5px;
+  }
+  @media screen and (min-width: $iPadmini) {
+    padding-left: 24px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 14px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 14px;
+  }
+}
+
+.history-line-4 {
+  width: 1px;
+  height: 189px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 6px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 25px;
+  }
+}
+
+.history-yellowcircle-4 {
+  height: 14px;
+  width: 14px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    position: absolute;
+    top: 940px;
+    left: -5px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-left: 0px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 9px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 20px;
+  }
+}
+
+.history-line-5 {
+  width: 5px;
+  height: 298px;
+  color: black;
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 20px;
+  }
+}
+
+.history-yellowcircle-5 {
+  height: 14px;
+  width: 14px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    position: absolute;
+    top: 1188px;
+    left: -5px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-left: 11px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 15px;
+  }
+}
+
+.logoHistory {
+  margin: 0px;
+
+  @media screen and (max-width: $iPadmini - 1px) {
+    position: absolute;
+    top: 90px;
+    left: 37px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    padding-top: 180px;
+    padding-left: 10px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    padding-top: 180px;
+    padding-left: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 180px;
+    padding-left: 10px;
+  }
+}
+
+.history-paragraf-1,
+.history-paragraf-2,
+.history-paragraf-3,
+.history-paragraf-4,
+.history-paragraf-5 {
+  font-family: $font_details;
+  color: $color-secondary;
+  line-height: 1.5;
+  color: $color-secondary;
+  margin: 0px;
+}
+.history-paragraf-1 {
+  padding-top: 40px;
+  padding-left: 10px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    width: 252px;
+    font-size: 16px;
+    position: absolute;
+    top: 120px;
+    padding-left: 37px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 208px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 215px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 215px;
+    font-size: 18px;
+  }
+}
+.history-paragraf-2 {
+  padding-top: 110px;
+  padding-left: 10px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    width: 252px;
+    font-size: 16px;
+    position: absolute;
+    top: 260px;
+    padding-left: 37px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 208px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 215px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 215px;
+    font-size: 18px;
+  }
+}
+.history-paragraf-3 {
+  padding-top: 173px;
+  padding-left: 10px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    width: 252px;
+    font-size: 16px;
+    position: absolute;
+    top: 410px;
+    padding-left: 37px;
+  }
+
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    width: 210px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 224px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+    font-size: 18px;
+  }
+}
+.history-paragraf-4 {
+  font-size: 18px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    width: 252px;
+    position: absolute;
+    top: 850px;
+    padding-left: 37px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    width: 208px;
+    padding-top: 95px;
+    padding-left: 10px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 215px;
+    padding-top: 95px;
+    padding-left: 10px;
+  }
+}
+.history-paragraf-5 {
+  font-size: 18px;
+  @media screen and (max-width: $iPadmini - 1px) {
+    width: 252px;
+    position: absolute;
+    top: 1070px;
+    padding-left: 37px;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $iPadmini) and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 215px;
+    padding-top: 145px;
+    padding-left: 10px;
+  }
+}

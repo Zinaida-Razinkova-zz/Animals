@@ -1,0 +1,90 @@
+<section>
+  <div class="foto-img-block">
+    <div class="foto-img-container">
+      <div class="foto-white-line1"></div>
+      <div class="foto-white-line2"></div>
+      <img
+        onclick="openFotoGallery();fotoSlide(1)"
+        class="foto-raccoon-1"
+        srcset="./images/foto/raccoon1@2x.jpg 2x"
+        src="./images/foto/raccoon1.jpg"
+        alt=""
+      />
+      <img
+        onclick="openFotoGallery();fotoSlide(2)"
+        class="foto-raccoon-2"
+        srcset="./images/foto/raccoon2@2x.jpg 2x"
+        src="./images/foto/raccoon2.jpg"
+        alt=""
+      />
+      <img
+        onclick="openFotoGallery();fotoSlide(3)"
+        class="foto-raccoon-3"
+        srcset="./images/foto/raccoon3@2x.jpg 2x"
+        src="./images/foto/raccoon3.jpg"
+        alt=""
+      />
+      <img
+        onclick="openFotoGallery();fotoSlide(4)"
+        class="foto-raccoon-4"
+        srcset="./images/foto/raccoon4@2x.jpg 2x"
+        src="./images/foto/raccoon4.jpg"
+        alt=""
+      />
+      <img
+        onclick="openFotoGallery();fotoSlide(5)"
+        class="foto-raccoon-5"
+        srcset="./images/foto/raccoon5@2x.jpg 2x"
+        src="./images/foto/raccoon5.jpg"
+        alt=""
+      />
+      <img
+        onclick="openFotoGallery();fotoSlide(6)"
+        class="foto-raccoon-6"
+        srcset="./images/foto/raccoon6@2x.jpg 2x"
+        src="./images/foto/raccoon6.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+<!-- Lightbox -->
+<div id="foto-modal" class="foto-modal">
+  <span class="foto-close cursor" onclick="closeGallery()">&times;</span>
+
+  <div class="foto-modal-content container">
+    <img
+      srcset="./images/foto/raccoon1@2x.jpg 2x"
+      src="./images/foto/raccoon1@2x.jpg"
+      class="foto-slide"
+    />
+    <img
+      srcset="./images/foto/raccoon2@2x.jpg 2x"
+      src="./images/foto/raccoon2@2x.jpg"
+      class="foto-slide"
+    />
+    <img
+      srcset="./images/foto/raccoon3@2x.jpg 2x"
+      src="./images/foto/raccoon3@2x.jpg"
+      class="foto-slide"
+    />
+    <img
+      srcset="./images/foto/raccoon4@2x.jpg 2x"
+      src="./images/foto/raccoon4@2x.jpg"
+      class="foto-slide"
+    />
+    <img
+      srcset="./images/foto/raccoon5@2x.jpg 2x"
+      src="./images/foto/raccoon5@2x.jpg"
+      class="foto-slide"
+    />
+    <img
+      srcset="./images/foto/raccoon6@2x.jpg 2x"
+      src="./images/foto/raccoon6@2x.jpg"
+      class="foto-slide"
+    />
+
+    <a class="foto-prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="foto-next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Animals</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/history.html"></include>
+    <include src="./partials/loves.html"></include>
+    <include src="./partials/foto.html"></include>
+
+    <script src="./js/menu.js"></script>
+
+    <script>
+      // Open the Modal
+      function openFotoGallery() {
+        document.getElementById('foto-modal').style.display = 'block';
+      }
+
+      // Close the Modal
+      function closeGallery() {
+        document.getElementById('foto-modal').style.display = 'none';
+      }
+
+      var slideIndex = 1;
+      show_Slides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        show_Slides((slideIndex += n));
+      }
+      function fotoSlide(n) {
+        show_Slides((slideIndex = n));
+      }
+
+      function show_Slides(n) {
+        var i;
+        var slides = document.getElementsByClassName('foto-slide');
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+
+        slides[slideIndex - 1].style.display = 'block';
+      }
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
