@@ -1,13 +1,43 @@
-// (() => {
-//   const menuBtnRef = document.querySelector('[data-menu-button]');
-//   const mobileMenuRef = document.querySelector('[data-menu]');
+// Open the Modal
+function openFotoGallery() {
+  document.getElementById('foto-modal').style.display = 'block';
+}
+window.openFotoGallery = openFotoGallery;
 
-//   menuBtnRef.addEventListener('click', () => {
-//     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+// Close the Modal
+function closeGallery() {
+  document.getElementById('foto-modal').style.display = 'none';
+}
 
-//     menuBtnRef.classList.toggle('is-open');
-//     menuBtnRef.setAttribute('aria-expanded', !expanded);
+window.closeGallery = closeGallery;
+var slideIndex = 1;
+show_Slides(slideIndex);
 
-//     mobileMenuRef.classList.toggle('is-open');
-//   });
-// })();
+// Next/previous controls
+function plusSlides(n) {
+  show_Slides((slideIndex += n));
+}
+window.plusSlides = plusSlides;
+
+function fotoSlide(n) {
+  show_Slides((slideIndex = n));
+}
+window.fotoSlide = fotoSlide;
+
+function show_Slides(n) {
+  var i;
+  var slides = document.getElementsByClassName('foto-slide');
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  slides[slideIndex - 1].style.display = 'block';
+}
+window.show_Slides = show_Slides;
