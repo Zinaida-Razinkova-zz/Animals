@@ -61,8 +61,13 @@
     top: 2800px;
     left: 20px;
   }
-  @media screen and (min-width: $iPhone11ProX) and (max-width: $iPadmini - 1px) {
+
+  @media screen and (min-width: $iPhone11ProX) and (max-width: $mobileL - 1px) {
     top: 2950px;
+    left: 27px;
+  }
+  @media screen and (min-width: $mobileL) and (max-width: $iPadmini - 1px) {
+    top: 2910px;
     left: 27px;
   }
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
@@ -91,9 +96,14 @@
   @media screen and (max-width: 374px) {
     width: 280px;
   }
-  @media screen and (min-width: 375px) and (max-width: $iPadmini - 1px) {
+  @media screen and (min-width: 375px) and (max-width: $mobileL - 1px) {
     width: 320px;
   }
+  @media screen and (min-width: $mobileL) and (max-width: $iPadmini - 1px) {
+    width: 350px;
+    padding-left: 10px;
+  }
+
   @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
     padding-bottom: 70px;
   }

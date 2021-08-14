@@ -44,6 +44,14 @@
     background-image: url(../images/about/header4.jpg);
   }
 
+  @media screen and (min-width: $mobileL) and (max-width: $iPadmini - 1px) {
+    width: 408px;
+    height: 295px;
+    top: 9px;
+    right: 0px;
+    background-image: url(../images/about/header4.jpg);
+  }
+
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
     width: 632px;
     height: 399px;
