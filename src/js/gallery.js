@@ -1,28 +1,27 @@
-// Open the Modal
+window.openFotoGallery = openFotoGallery;
+window.closeGallery = closeGallery;
+window.plusSlides = plusSlides;
+window.fotoSlide = fotoSlide;
+window.show_Slides = show_Slides;
+
 function openFotoGallery() {
   document.getElementById('foto-modal').style.display = 'block';
 }
-window.openFotoGallery = openFotoGallery;
 
-// Close the Modal
 function closeGallery() {
   document.getElementById('foto-modal').style.display = 'none';
 }
 
-window.closeGallery = closeGallery;
 var slideIndex = 1;
 show_Slides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   show_Slides((slideIndex += n));
 }
-window.plusSlides = plusSlides;
 
 function fotoSlide(n) {
   show_Slides((slideIndex = n));
 }
-window.fotoSlide = fotoSlide;
 
 function show_Slides(n) {
   var i;
@@ -40,4 +39,3 @@ function show_Slides(n) {
 
   slides[slideIndex - 1].style.display = 'block';
 }
-window.show_Slides = show_Slides;
