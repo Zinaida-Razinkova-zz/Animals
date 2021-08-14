@@ -38,10 +38,11 @@
       function plusSlides(n) {
         show_Slides((slideIndex += n));
       }
+      window.plusSlides = plusSlides;
       function fotoSlide(n) {
         show_Slides((slideIndex = n));
       }
-
+      window.fotoSlide = fotoSlide;
       function show_Slides(n) {
         var i;
         var slides = document.getElementsByClassName('foto-slide');
@@ -58,6 +59,7 @@
 
         slides[slideIndex - 1].style.display = 'block';
       }
+      window.show_Slides = show_Slides;
     </script>
     <script src="./index.js"></script>
   </body>
