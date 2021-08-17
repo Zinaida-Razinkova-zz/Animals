@@ -8,17 +8,33 @@
   background-repeat: no-repeat;
 
   @media screen and (max-width: $iPadmini - 1px) {
+    max-width: 768px;
     height: 390px;
   }
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    max-width: 1023px;
     height: 500px;
   }
   @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    max-width: 1440px;
     height: 530px;
   }
 
   @media screen and (min-width: $desktop) {
+    max-width: 1600px;
     height: 760px;
+  }
+}
+
+.about-background-raccoonMobile {
+  position: absolute;
+  top: 9px;
+  right: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 426px) {
+    display: none;
   }
 }
 
@@ -27,29 +43,17 @@
   z-index: 1;
   background-size: cover;
   background-repeat: no-repeat;
+  display: block;
+  max-width: 100%;
+  height: auto;
 
-  @media screen and (min-width: $mobile) {
-    width: 303px;
-    height: 275px;
-    top: 9px;
-    right: 0px;
-    background-image: url(../images/about/header5.jpg);
+  @media screen and (max-width: 425px) {
+    display: none;
   }
 
-  @media screen and (min-width: $iPhone11ProX) {
-    width: 359px;
-    height: 295px;
+  @media screen and (min-width: 426px) and (max-width: $iPadmini - 1px) {
     top: 9px;
     right: 0px;
-    background-image: url(../images/about/header4.jpg);
-  }
-
-  @media screen and (min-width: $mobileL) and (max-width: $iPadmini - 1px) {
-    width: 408px;
-    height: 295px;
-    top: 9px;
-    right: 0px;
-    background-image: url(../images/about/header6.jpg);
   }
 
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
@@ -57,7 +61,6 @@
     height: 399px;
     top: 16px;
     right: 0px;
-    background-image: url(../images/about/header3.jpg);
   }
 
   @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
@@ -65,7 +68,6 @@
     height: 399px;
     top: 20px;
     right: 0px;
-    background-image: url(../images/about/header2.jpg);
   }
 
   @media screen and (min-width: $desktop) {
@@ -73,33 +75,6 @@
     height: 539px;
     top: 46px;
     right: 92px;
-    background-image: url(../images/about/header1.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .about-background-raccoon {
-    @media screen and (min-width: $mobile) {
-      background-image: url(../images/about/header5@2x.jpg);
-    }
-
-    @media screen and (min-width: $iPhone11ProX) {
-      background-image: url(../images/about/header4@2x.jpg);
-    }
-
-    @media screen and (min-width: $mobileL) and (max-width: $desktop2 - 1px) {
-      background-image: url(../images/about/header3@2x.jpg);
-    }
-
-    @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
-      background-image: url(../images/about/header2@2x.jpg);
-    }
-
-    @media screen and (min-width: $desktop2) {
-      background-image: url(../images/about/header1@2x.jpg);
-    }
   }
 }
 
@@ -107,28 +82,26 @@
   position: absolute;
   z-index: 3;
   background-repeat: no-repeat;
+  width: 245px;
+  height: 335px;
 
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
-    width: 245px;
-    height: 335px;
+    background-image: url(../images/about/about-overlayyellow1440.svg);
     top: 160px;
     left: 450px;
-    background-image: url(../images/about/about-overlayyellow1440.svg);
   }
+
   @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
-    width: 245px;
-    height: 335px;
+    background-image: url(../images/about/about-overlayyellow1440.svg);
     top: 210px;
     left: 663px;
-    background-image: url(../images/about/about-overlayyellow1440.svg);
   }
 
   @media screen and (min-width: $desktop) {
+    background-image: url(../images/about/about-overlayyellow1440.svg);
     width: 331px;
-    height: 335px;
     top: 358px;
     left: 950px;
-    background-image: url(../images/about/about-overlayyellow1440.svg);
   }
 }
 
@@ -141,7 +114,7 @@
     width: 197px;
     height: 210px;
     top: 200px;
-    left: 0px;
+
     background-image: url(../images/about/about-overlaywhite375.svg);
   }
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
@@ -172,12 +145,12 @@
   z-index: 4;
 
   @media screen and (max-width: $iPadmini - 1px) {
-    top: 280px;
+    top: 270px;
     left: 10px;
   }
 
   @media screen and (min-width: $iPhone11ProX) and (max-width: $iPadmini - 1px) {
-    top: 281px;
+    top: 271px;
     left: 21px;
   }
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {

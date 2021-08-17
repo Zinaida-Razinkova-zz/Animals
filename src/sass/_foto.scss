@@ -113,8 +113,8 @@
 }
 
 .foto-raccoon-2 {
+  position: absolute;
   @media screen and (max-width: 374px) {
-    width: 300px;
     display: none;
   }
 
@@ -122,16 +122,16 @@
     display: none;
   }
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
-    position: absolute;
     top: 590px;
     left: 360px;
   }
   @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
-    position: absolute;
     top: 610px;
     left: 400px;
   }
   @media screen and (min-width: $desktop) {
+    top: 550px;
+    left: 0px;
   }
 }
 
@@ -155,10 +155,33 @@
   }
   @media screen and (min-width: $desktop) {
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 420px;
   }
 }
+
+.foto-raccoon-4 {
+  @media screen and (max-width: $iPadmini - 1px) {
+    display: none;
+  }
+  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
+    position: absolute;
+    top: 960px;
+    left: 0px;
+  }
+  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
+    position: absolute;
+    top: 1020px;
+    left: 0px;
+  }
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    width: 360px;
+    top: 620px;
+    left: 400px;
+  }
+}
+
 .foto-raccoon-5 {
   @media screen and (max-width: 374px) {
     display: none;
@@ -204,31 +227,7 @@
   }
   @media screen and (min-width: $desktop) {
     position: absolute;
-    top: 520px;
+    top: 550px;
     left: 840px;
-  }
-}
-
-.foto-raccoon-4 {
-  @media screen and (max-width: $iPadmini - 1px) {
-    width: 320px;
-    display: none;
-  }
-  @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
-    width: 320px;
-    position: absolute;
-    top: 960px;
-    left: 0px;
-  }
-  @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
-    width: 320px;
-    position: absolute;
-    top: 1020px;
-    left: 0px;
-  }
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    top: 620px;
-    left: 420px;
   }
 }

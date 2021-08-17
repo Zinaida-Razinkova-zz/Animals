@@ -42,17 +42,21 @@
 .header-logo {
   @media screen and (max-width: $iPadmini - 1px) {
     width: 80px;
+    height: 29px;
   }
   @media screen and (min-width: $iPadmini) and (max-width: $desktop2 - 1px) {
     width: 97px;
+    height: 35px;
   }
   @media screen and (min-width: $desktop2) and (max-width: $desktop - 1px) {
     width: 97px;
+    height: 40pxpx;
   }
 
   @media screen and (min-width: $desktop) {
     margin: 12px 0px 0px 73px;
     width: 135px;
+    height: 49px;
   }
 }
 

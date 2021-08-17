@@ -4,8 +4,6 @@ const dynamicCacheName = 'dynamic-cache-v0';
 const staticAssets = [
   './',
   './index.html',
-  //   './offline.html',
-  //   './images/no-image.jpg',
   './images/icons/icon-192x192.png',
   './index.js',
   './js/app.js',
@@ -31,7 +29,7 @@ self.addEventListener('activate', async event => {
 });
 
 self.addEventListener('fetch', event => {
-  console.log(`Trying to fetch ${event.request.url}`);
+  // console.log(`Trying to fetch ${event.request.url}`);
   event.respondWith(checkCache(event.request));
 });
 
